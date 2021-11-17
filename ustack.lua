@@ -84,7 +84,7 @@ local function ustack(uhash) -- uhash(itm) should return non-numeric as hash
     pop = pop,     
   }  
 end
-
+if ... then return {ustack=ustack, hashByKeys = hashByKeys} end-- return as module if required
 ---   test
 local NULL = {}
 local hash = hashByKeys({1,2,3},true)-- test itm use array of string/num so to easier output with table.concat
